@@ -12,15 +12,17 @@ package com.cifpcarballeira.katas.FizzBuzz;
 public class FizzBuzz {
     
     public String getFizzBuzz(int i){
-        if (i%3==0 && i%5==0) {
+        String cadenaI = i+"";
+    
+        if (i%3==0 && i%5==0) { 
             return "FizzBuzz";
         }else{
-        if (i%3==0){
-            return "Fizz";
-        }
-        if (i%5==0) {
-            return "Buzz";
-        }
+            if (i%3==0 || cadenaI.contains("3")){
+                return "Fizz";
+            }
+            if (i%5==0 || cadenaI.contains("5")) {
+                return "Buzz";
+            }
         }
         return i+"";
     }
