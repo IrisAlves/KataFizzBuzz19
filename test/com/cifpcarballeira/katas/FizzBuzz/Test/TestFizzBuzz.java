@@ -6,6 +6,7 @@ package com.cifpcarballeira.katas.FizzBuzz.Test;
  * and open the template in the editor.
  */
 
+import com.cifpcarballeira.katas.FizzBuzz.FizzBuzz;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -18,9 +19,10 @@ public class TestFizzBuzz {
     public TestFizzBuzz() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    @Test
+    public void test1devuelve1() {
+        FizzBuzz fb = new FizzBuzz();
+        String resultado = fb.getFizzBuzz(1);
+        assertEquals("1",resultado);
+    }
 }
