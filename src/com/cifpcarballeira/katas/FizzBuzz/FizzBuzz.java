@@ -13,19 +13,17 @@ public class FizzBuzz {
     
     public String getFizzBuzz(int i){
         String cadenaI = i+"";
-        if (cadenaI.contains("3")) {
-            return "Fizz";
-        }
-        if (i%3==0 && i%5==0) {
-            
+
+        if (i%3==0 && i%5==0) { 
+
             return "FizzBuzz";
         }else{
-        if (i%3==0){
-            return "Fizz";
-        }
-        if (i%5==0) {
-            return "Buzz";
-        }
+            if (i%3==0 || cadenaI.contains("3")){
+                return "Fizz";
+            }
+            if (i%5==0 || cadenaI.contains("5")) {
+                return "Buzz";
+            }
         }
         return i+"";
     }
